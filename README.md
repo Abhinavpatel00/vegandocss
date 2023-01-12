@@ -1,4 +1,4 @@
-# Vegan Documentary Website
+# Vegan Docs
 
 This is vegan documetary website [Vegan Docs](https://vegandocss.vercel.app/).
 
