@@ -4,7 +4,7 @@ This is vegan documetary website [Vegan Docs](https://vegandocss.vercel.app/).
 
 [ Have a look→](https://vegandocss.vercel.app/)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+
 
 
 
