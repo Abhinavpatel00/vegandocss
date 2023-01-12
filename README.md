@@ -1,6 +1,6 @@
 # Vegan Docs
 
-This is vegan documetary website [Vegan Docs](https://vegandocss.vercel.app/).
+This is vegan documentation website [Vegan Docs](https://vegandocss.vercel.app/).
 
 [ Have a look→](https://vegandocss.vercel.app/)
 
