@@ -10,7 +10,7 @@ ___
 
 Let's know and use the language of huamnity.The way to live and let live to the fullest.The way to let this world , living beings and kindness stay alive.
 
-`Veganism` the way to keep the world , living creatures and kindness live .
+`Veganism` the way to keep the world , living creatures and kindness alive .
 
 
 
