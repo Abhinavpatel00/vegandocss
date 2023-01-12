@@ -4,6 +4,13 @@ This is vegan documetary website [Vegan Docs](https://vegandocss.vercel.app/).
 
 [ Have a look→](https://vegandocss.vercel.app/)
 
+___
+
+## Our Intro
+
+Let's know and use the language of huamnity.The way to live and let live to the fullest.The way to let this world , living beings and kindness stay alive.
+
+`Veganism` the way to keep the world , living creatures and kindness live .
 
 
 
@@ -12,9 +19,11 @@ This is vegan documetary website [Vegan Docs](https://vegandocss.vercel.app/).
 
 
 
-## We stand for
 
-We are here to introduce and help you to learn the language of huamnity.The way to live and let live to the fullest.
+
+
+
+
 
 
 
