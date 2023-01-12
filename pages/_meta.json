@@ -1,0 +1,18 @@
+{
+  "index": "Introduction",
+  "another": "Another Page",
+  "Introduction": "Introduction to veganism",
+  "aboutveganism": "About Veganism",
+  "enviroment": "Enviromental impact",
+  "healthbenefits": "Health Benefits",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}
