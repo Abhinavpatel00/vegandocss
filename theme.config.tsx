@@ -15,4 +15,17 @@ const config: DocsThemeConfig = {
   },
 }
 
-export default config
+export default {
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Vegn Doc'
+    }
+  },
+}
+
+
+
+
+
+
+
