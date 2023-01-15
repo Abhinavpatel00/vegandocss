@@ -11,7 +11,7 @@ const Head = () => {
         titleTemplate="%s – Vegn Documentation " 
         openGraph={{
           url: https://vegandocss.vercel.app/ ${asPath},
-          title: frontMatter.title || 'Vegan Docs',
+          title: frontMatter.title || 'Vegan Documentation',
           description: frontMatter.description || ' '
         }}
       />
