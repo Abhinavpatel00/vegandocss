@@ -1,3 +1,26 @@
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
+import { NextSeo } from 'next-seo'
+ 
+const Head = () => {
+  const { asPath } = useRouter()
+  const { frontMatter } = useConfig()
+  return (
+    <>
+      <NextSeo 
+        titleTemplate="%s – Vegn Documentation " 
+        openGraph={{
+          url: https://vegandocss.vercel.app/ ${asPath},
+          title: frontMatter.title || 'Vegan Docs',
+          description: frontMatter.description || ' '
+        }}
+      />
+    </>
+  )
+}
+ 
+export default Head
+
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
@@ -18,7 +41,7 @@ const config: DocsThemeConfig = {
 export default {
   useNextSeoProps() {
     return {
-      titleTemplate: '%s – Vegn Documentation'
+      titleTemplate: '%s – Vegn Documentation '
     }
   },
 }
@@ -32,45 +55,6 @@ export default {
     </>
   ),
 }
-import { useRouter } from 'next/router'
-import { useConfig } from 'nextra-theme-docs'
-import { NextSeo } from 'next-seo'
- 
-const Head = () => {
-  const { asPath } = useRouter()
-  const { frontMatter } = useConfig()
-  return (
-    <>
-      <NextSeo 
-        titleTemplate="%s – SWR" 
-        openGraph={{
-          url: https://vegandocss.vercel.app/ ${asPath},
-          title: frontMatter.title || 'Vegan Docs',
-          description: frontMatter.description || ' '
-        }}
-      />
-    </>
-  )
-}
- 
-export default Head
-
-
-
-  
-   
-      
-   
-          
-     
-
-
-
-
-
-
-
-
 
 
 
