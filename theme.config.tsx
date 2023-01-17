@@ -1,55 +1,110 @@
-
-import { useConfig } from 'nextra-theme-docs'
-import { NextSeo } from 'next-seo' 
-    const Head = () => { 
-    
-    const { frontMatter } = useConfig()
-     
-    <> 
-     <NextSeo titleTemplate="%s – Vegn Documentation "
-      openGraph={{ url:https://vegandocss.vercel.app/${asPath}, 
-                  title:'Vegan Documentation',
-                   description:' ', 
-            }} 
-         /> 
-     </> 
-   )
- } 
- export default Head 
-
-
 import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs' 
+import { DocsThemeConfig, useConfig } from 'nextra-theme-docs'
+import { useRouter } from 'next/router'
 
-     const config: DocsThemeConfig = 
-      { logo: <span>My Project</span>,
-       project: 
-       { link: 'https://github.com/', }, 
-       chat: 
-       { link: 'https://discord.com', }, 
-       docsRepositoryBase: 'https://github.com/',
-       footer: { text:'vegan docs',
-     },
-}
-export default{
- useNextSeoProps(){
-   return{
-     titleTemplate:'%s- Vegn Documentation'
-   }
- },
-}
-export default{
-  head:(
+const config: DocsThemeConfig = {
+  useNextSeoProps() {
+    const { route } = useRouter()
+    if (route !== '/') {
+      return {
+        titleTemplate: '%s - Vegan docs',
+      }
+    }
+  },
+  logo: (
     <>
-       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-      <meta property="og:title" content="Vegan Doc" />
-      <meta property="og:description" content=" " />
-     < / >
-   ),
-}
+      <span className="hidden font-normal text-gray-600 md:inline">
+       Vegan Documentation
+      </span>
+    </>
+  ),
+  project: {
+    link: 'https://github.com/',
+  },
+  chat: {
+    link: 'https://twitter.com/Veganabhinav',
+    icon: (
+      <svg
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <title>Logo Twitter</title>
+        <path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+      </svg>
+    ),
+  },
+  editLink: {
+    text: 'Edit this page on GitHub',
+  },
+  docsRepositoryBase: 'https://github.com/guglu-paglu/vegandocss/blob/main/',
+  footer: {
+    text: (
+      <p>
+        © {new Date().getFullYear()}{' '}
+        <a
+          className="nx-text-primary-600 nx-underline nx-decoration-from-font [text-underline-position:under]"
+          href="https://theodorusclarence.com?ref=docs"
+          target="_blank"
+          rel="noopener"
+        >
+         Vegan docs
+        </a>
+       
+    
+      </p>
+    ),
+  },
+  head: () => {
+    const { asPath } = useRouter()
+    const { frontMatter, title } = useConfig()
 
+    const image = openGraph({
+      description:
+        frontMatter.description ||
+        'this is Vegan documentation',
+      siteName: 'https://vegandocss.vercel.app/',
+      templateTitle: title || "Vegan Documentation",
+    })
 
+    return (
+      <>
+        {/* Open Graph */}
+        <meta property="og:url" content={`https://vegandocss.vercel.app/${asPath}`} />
+        <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:type" content={'https://vegandocss.vercel.app/'} />
+        <meta property="og:site_name" content="Veagan Documentation" />
+        <meta
+          name="og:description"
+          content="Theodorus Clarence’s documentation about practices on development"
+        />
+        <meta name="image" property="og:image" content={image} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="image" />
+        <meta name="twitter:site:domain" content="https://vegandocss.vercel.app/" />
+        <meta name="twitter:url" content={`https://vegandocss.vercel.app/${asPath}`} />
+
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta
+          name="description"
+          content="Vegan documentation"
+        />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Docs - Vegan"
+        />
  
+    
+   
+      </>
+    )
+  },
+}
 
 
 
