@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router'
+
 import { useConfig } from 'nextra-theme-docs'
 import { NextSeo } from 'next-seo' 
     const Head = () => { 
-    const { asPath } = useRouter()
+    
     const { frontMatter } = useConfig()
-     routerVariable = useRouter() return ( 
+     
     <> 
      <NextSeo titleTemplate="%s – Vegn Documentation "
       openGraph={{ url:https://vegandocss.vercel.app/${asPath}, 
