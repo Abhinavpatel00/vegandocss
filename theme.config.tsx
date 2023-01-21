@@ -56,55 +56,7 @@ const config: DocsThemeConfig = {
       </p>
     ),
   },
-  head: () => {
-    const { asPath } = useRouter()
-    const { frontMatter, title } = useConfig()
-
-    const image = openGraph({
-      description:
-        frontMatter.description ||
-        'this is Vegan documentation',
-      siteName: 'https://vegandocss.vercel.app/',
-      templateTitle: title || "Vegan Documentation",
-    })
-
-    return (
-      <>
-        {/* Open Graph */}
-        <meta property="og:url" content={`https://vegandocss.vercel.app/${asPath}`} />
-        <meta property="og:title" content={frontMatter.title} />
-        <meta property="og:type" content={'https://vegandocss.vercel.app/'} />
-        <meta property="og:site_name" content="Veagan Documentation" />
-        <meta
-          name="og:description"
-          content="Theodorus Clarence’s documentation about practices on development"
-        />
-        <meta name="image" property="og:image" content={image} />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="image" />
-        <meta name="twitter:site:domain" content="https://vegandocss.vercel.app/" />
-        <meta name="twitter:url" content={`https://vegandocss.vercel.app/${asPath}`} />
-
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta httpEquiv="Content-Language" content="en" />
-        <meta
-          name="description"
-          content="Vegan documentation"
-        />
-        <meta
-          name="apple-mobile-web-app-title"
-          content="Docs - Vegan"
-        />
- 
-    
-   
-      </>
-    )
-  },
-}
+  
 
 
 
