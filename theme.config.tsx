@@ -6,7 +6,6 @@ export default {
   nextLinks: true,
   prevLinks: true,
   search: true,
-  customSearch: null, // customizable,
   darkMode: true,
   footer: true,
   footerText: `MIT ${new Date().getFullYear()} © Vegan docs.`,
