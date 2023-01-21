@@ -56,7 +56,7 @@ const config: DocsThemeConfig = {
       </p>
     ),
   },
-  
+}
 
 
 
