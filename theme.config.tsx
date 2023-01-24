@@ -18,11 +18,11 @@ const head = (
     <meta httpEquiv="Content-Language" content="en" />
     <meta
       name="description"
-      content="Explore our comprehensive vegan documentation to learn about the benefits of a plant-based diet, how to transition to veganism, and delicious vegan recipes. Find everything you need to know about the lifestyle, ethics, and health aspects of being vegan"
+      content="Explore our comprehensive vegan documentation to learn about the benefits of a plant-based diet"
     />
     <meta
       name="og:description"
-      content="Learn about the benefits of a vegan lifestyle and how to make the transition with our comprehensive vegan documentation. Discover delicious plant-based recipes, tips for maintaining a healthy and balanced diet, and information on the ethical and environmental impact of a vegan diet. Whether you're new to veganism or a seasoned pro, our documentation has something for everyone."
+      content="Learn about the benefits of a vegan lifestyle and how to make the transition with our comprehensive vegan documentation."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
