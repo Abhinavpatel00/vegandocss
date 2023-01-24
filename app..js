@@ -15,3 +15,4 @@ const config = {
     cardType: 'summary_large_image',
   },
 };
+<SEO config={config} />
