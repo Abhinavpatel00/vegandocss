@@ -1,42 +1,107 @@
-// theme.config.js
-export default {
-  projectLink: "https://github.com/shuding/nextra", // GitHub link in the navbar
-  docsRepositoryBase: "https://github.com/shuding/nextra/blob/master", // base URL for the docs repository
-  titleSuffix: " – Vegan docs",
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  darkMode: true,
-  defaultMenuCollapsed:false, 
-  footer: true,
-  footerText: `MIT ${new Date().getFullYear()} © Vegan docs.`,
-  footerEditLink: `Edit this page on GitHub`,
-  logo: (
-    <>
-      <svg>...</svg>
-      <span>Vegan documentation</span>
-    </>
-  ),
-  
-  head: (
-    <>
-      <meta name="vegan-docs-TitleColor" content="#ffffff"/>
-                  
-      
-      <meta name="theme-color" content="#ffffff" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Vegn Documentation " />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@shuding_" />
-      <meta property="og:title" content="Vegn Documentation " />
-      <meta property="og:description" content="Vegn Documentation"/>
-                                               
-                                               
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
+import { useRouter } from "next/router";
 
-    </>
-  ),
-}
+const logo = (
+  <svg width="50" height="50">
+  <circle cx="25" cy="25" r="24" fill="#8BC34A"/>
+  <path d="M37 18c0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6 6-2.686 6-6zM20 18c0-3.314 2.686-6 6-6s6 2.686 6 6-2.686 6-6 6-6-2.686-6-6z" fill="#fff"/>
+</svg>
+
+);
+
+const head = (
+  <>
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta httpEquiv="Content-Language" content="en" />
+    <meta
+      name="description"
+      content="Explore our comprehensive vegan documentation to learn about the benefits of a plant-based diet, how to transition to veganism, and delicious vegan recipes. Find everything you need to know about the lifestyle, ethics, and health aspects of being vegan"
+    />
+    <meta
+      name="og:description"
+      content="Learn about the benefits of a vegan lifestyle and how to make the transition with our comprehensive vegan documentation. Discover delicious plant-based recipes, tips for maintaining a healthy and balanced diet, and information on the ethical and environmental impact of a vegan diet. Whether you're new to veganism or a seasoned pro, our documentation has something for everyone."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content=""
+    />
+    <meta
+      name="twitter:site:domain"
+      content="https://github.com/guglu-paglu/vegandocss"
+    />
+    <meta
+      name="twitter:url"
+      content="https://github.com/guglu-paglu/vegandocss"
+    />
+    <meta name="og:title" content="The Most comprehensive Vegan's documentation" />
+    <meta
+      name="og:image"
+      content=""
+    />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Vegan docs"
+    />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" />
+  </>
+);
+
+const config: DocsThemeConfig = {
+  logo,
+  primaryHue: { dark: 60, light: 250 },
+  project: {
+    link: "https://github.com/guglu-paglu/vegandocss",
+  },
+
+  docsRepositoryBase:
+    "https://github.com/guglu-paglu/vegandocss/blob/main",
+  useNextSeoProps: () => {
+    const { route } = useRouter();
+    const titleTemplate =
+      route === "/" ? "Vegan's documentation" : "%s - Vegan docs";
+    return {
+      titleTemplate,
+    };
+  },
+  head,
+  footer: {
+    text: () => (
+      <div>
+        <p>© 2023 🐇 Vegan docs</p>
+        <p>
+          From{" "}
+          <a href="https://vegandocss.vercel.app/" style={{ fontWeight: "bold" }}>
+            Vegan docs
+          </a>{" "}
+          team
+        </p>
+      </div>
+    ),
+  },
+  feedback: {
+    content: () => <>Question? Give us feedback ↗</>,
+    labels: "feedback",
+  },
+  banner: {
+    key: "beta-release",
+    text: (
+      <a
+        href="https://github.com/guglu-paglu/vegandocss"
+        target="_blank"
+        rel="noreferrer"
+      >
+        🐇 Vegan docs is open source so that Vegans like you can also help us. Feel free to
+        contribute ↗
+      </a>
+    ),
+  },
+};
+
+export default config;
   
    
       
