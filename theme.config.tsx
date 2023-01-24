@@ -19,7 +19,7 @@ export default {
   ),
   
   head: (
-    <React.Fragment>
+    <>
       <meta name="vegan-docs-TitleColor" content="#ffffff"/>
                   
       
@@ -34,7 +34,7 @@ export default {
                                                
                                                
       <meta name="apple-mobile-web-app-title" content="Vegan Docs" />
-    </React.Fragment>
+    </>
   ),
 }
   
