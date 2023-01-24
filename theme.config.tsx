@@ -7,6 +7,7 @@ export default {
   prevLinks: true,
   search: true,
   darkMode: true,
+  defaultMenuCollapsed:false, 
   footer: true,
   footerText: `MIT ${new Date().getFullYear()} © Vegan docs.`,
   footerEditLink: `Edit this page on GitHub`,
