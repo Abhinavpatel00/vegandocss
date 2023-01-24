@@ -27,7 +27,7 @@ const head = (
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content=""
+      content="https://github.com/guglu-paglu/vegandocss/tree/main/images/vegandocssss.jpg"
     />
     <meta
       name="twitter:site:domain"
@@ -40,7 +40,7 @@ const head = (
     <meta name="og:title" content="The Most comprehensive Vegan's documentation" />
     <meta
       name="og:image"
-      content=""
+      content="https://github.com/guglu-paglu/vegandocss/tree/main/images/vegandocssss.jpg"
     />
     <meta
       name="apple-mobile-web-app-title"
