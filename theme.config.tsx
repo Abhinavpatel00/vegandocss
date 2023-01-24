@@ -22,7 +22,7 @@ const head = (
     />
     <meta
       name="og:description"
-      content="Learn about the benefits of a vegan lifestyle and how to make the transition with our comprehensive vegan documentation."
+      content="Explore our comprehensive vegan documentation to learn about the benefits of a plant-based diet"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
