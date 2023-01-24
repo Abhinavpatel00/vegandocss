@@ -17,14 +17,34 @@ export default {
       <span>Vegan documentation</span>
     </>
   ),
+  
   head: (
-    <>
+    <React.Fragment>
+      <meta name="vegan-docs-TitleColor" content="#ffffff"/>
+                  
       
-      <meta name="description" content="Vegan docs" />
-      <meta name="og:title" content="vegan docs" />
-    </>
+      <meta name="theme-color" content="#ffffff" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="Content-Language" content="en" />
+      <meta name="description" content="Vegn Documentation " />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@shuding_" />
+      <meta property="og:title" content="Vegn Documentation " />
+      <meta property="og:description" content="Vegn Documentation"/>
+                                               
+                                               
+      <meta name="apple-mobile-web-app-title" content="Vegan Docs" />
+    </React.Fragment>
   ),
-};
+}
+  
+   
+      
+     
+      
+   
+
+
 
 
   
