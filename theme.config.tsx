@@ -33,7 +33,7 @@ export default {
       <meta property="og:description" content="Vegn Documentation"/>
                                                
                                                
-      <meta name="apple-mobile-web-app-title" content="Vegan Docs" />
+
     </>
   ),
 }
