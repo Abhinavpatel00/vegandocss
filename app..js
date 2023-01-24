@@ -3,15 +3,15 @@ import SEO from 'next-seo';
 
 const config = {
   title: 'Vegn Docs',
-  description: 'My website description',
+  description: '',
   openGraph: {
     type: 'website',
     url: '',
     site_name: 'Vegan Documentation ',
   },
   twitter: {
-    handle: '@handle',
-    site: '@site',
+    handle: 'https://twitter.com/Veganabhinav?t=AukCrx6Tp36j1FT8HyxNPQ&s=08' ,
+    site: '',
     cardType: 'summary_large_image',
   },
 };
