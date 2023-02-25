@@ -8,7 +8,7 @@ ___
 
 ## Our Intro
 
->Let's know and use the language of huamnity.The way to live and let live to the fullest.The way to let this world , living beings and kindness stay alive.
+>Let's know and use the language of humanity.The way to live and let live to the fullest.The way to let this world , living beings and kindness stay alive.
 
 
 
