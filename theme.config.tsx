@@ -52,7 +52,6 @@ const head = (
 
 const config: DocsThemeConfig = {
   logo,
-  primaryHue: { dark: 60, light: 250 },
   project: {
     link: "https://github.com/guglu-paglu/vegandocss",
   },
